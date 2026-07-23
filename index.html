@@ -1,158 +1,248 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hariom Yadav | GitHub Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hariom Yadav | Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0d1117;
-            color: #e6edf3;
-            line-height: 1.7;
-        }
+<style>
 
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-            background: #161b22;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-        h1 {
-            color: #58a6ff;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+body{
 
-        h2 {
-            color: #58a6ff;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #30363d;
-            padding-bottom: 5px;
-        }
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 
-        ul {
-            padding-left: 20px;
-        }
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#0d1117);
+    background-size:400% 400%;
 
-        li {
-            margin-bottom: 8px;
-        }
+    animation:bg 12s ease infinite;
+}
 
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
+@keyframes bg{
 
-        a:hover {
-            text-decoration: underline;
-        }
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #30363d;
-            color: #8b949e;
-        }
-    </style>
+}
+
+.card{
+
+width:420px;
+padding:35px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+box-shadow:0 10px 40px rgba(0,0,0,.5);
+
+text-align:center;
+
+color:white;
+
+}
+
+.profile{
+
+width:120px;
+height:120px;
+
+margin:auto;
+
+border-radius:50%;
+
+background:#58a6ff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:45px;
+
+font-weight:bold;
+
+margin-bottom:20px;
+
+}
+
+h1{
+
+font-size:32px;
+
+margin-bottom:8px;
+
+}
+
+p{
+
+color:#ddd;
+
+margin-bottom:25px;
+
+}
+
+h3{
+
+margin-top:20px;
+
+margin-bottom:15px;
+
+}
+
+.btn{
+
+display:block;
+
+margin:12px 0;
+
+padding:14px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:white;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.linkedin{
+background:#0077b5;
+}
+
+.github{
+background:#24292e;
+}
+
+.codechef{
+background:#5B4638;
+}
+
+.leetcode{
+background:#FFA116;
+color:black;
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.skills{
+
+margin-top:20px;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+.skills span{
+
+background:#58a6ff;
+
+padding:8px 15px;
+
+border-radius:30px;
+
+font-size:14px;
+
+}
+
+footer{
+
+margin-top:25px;
+
+font-size:14px;
+
+color:#bbb;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-    <h1>👋 Hi, I'm Hariom Yadav</h1>
+<div class="profile">
+HY
+</div>
 
-    <h2>About Me</h2>
+<h1>Hariom Yadav</h1>
 
-    <ul>
-        <li>🎓 B.Tech CSE Student</li>
-        <li>💻 Passionate about Programming, Web Development, and Problem Solving</li>
-        <li>🌱 Currently improving my Data Structures & Algorithms and Full Stack Development skills</li>
-        <li>🚀 Always eager to learn new technologies</li>
-    </ul>
+<p>
+B.Tech CSE Student 💻 <br>
+Web Developer | Python | C++ | DSA
+</p>
 
-    <h2>Connect with Me</h2>
+<h3>🌐 Connect With Me</h3>
 
-    <ul>
-        <li>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/hariiiom23" target="_blank">
-                linkedin.com/in/hariiiom23
-            </a>
-        </li>
+<a class="btn linkedin" href="https://www.linkedin.com/in/hariiiom23" target="_blank">
+🔗 LinkedIn
+</a>
 
-        <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/hariom2369" target="_blank">
-                github.com/hariom2369
-            </a>
-        </li>
+<a class="btn github" href="https://github.com/hariom2369" target="_blank">
+💻 GitHub
+</a>
 
-        <li>
-            <strong>CodeChef:</strong>
-            <a href="https://www.codechef.com/users/hariomcr7" target="_blank">
-                codechef.com/users/hariomcr7
-            </a>
-        </li>
+<a class="btn codechef" href="https://www.codechef.com/users/hariomcr7" target="_blank">
+🍽 CodeChef
+</a>
 
-        <li>
-            <strong>LeetCode:</strong>
-            <a href="https://leetcode.com/u/hariomcr7/" target="_blank">
-                leetcode.com/u/hariomcr7
-            </a>
-        </li>
-    </ul>
+<a class="btn leetcode" href="https://leetcode.com/u/hariomcr7/" target="_blank">
+⚡ LeetCode
+</a>
 
-    <h2>Skills</h2>
+<h3>🚀 Skills</h3>
 
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>VS Code</li>
-        <li>Jupyter Notebook</li>
-    </ul>
+<div class="skills">
 
-    <h2>GitHub Stats</h2>
+<span>C</span>
+<span>C++</span>
+<span>Python</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>SQL</span>
+<span>Git</span>
 
-    <p>
-        Add your GitHub Stats cards here using
-        <strong>GitHub Readme Stats</strong>.
-    </p>
+</div>
 
-    <h2>Goals</h2>
+<footer>
 
-    <ul>
-        <li>✔ Solve more DSA problems</li>
-        <li>✔ Build impactful projects</li>
-        <li>✔ Contribute to Open Source</li>
-        <li>✔ Keep learning every day</li>
-    </ul>
+⭐ Thanks for visiting my profile!
 
-    <div class="footer">
-        ⭐ Feel free to explore my repositories and connect with me!
-    </div>
+</footer>
 
 </div>
 
