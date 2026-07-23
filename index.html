@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hariom Yadav | Portfolio</title>
+<title>Hariom Yadav | GitHub Profile</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -17,230 +16,249 @@
 }
 
 body{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-
-    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#0d1117);
-    background-size:400% 400%;
-
-    animation:bg 12s ease infinite;
+    background:linear-gradient(135deg,#0d1117,#161b22,#1f2937);
+    color:#e6edf3;
+    line-height:1.7;
 }
 
-@keyframes bg{
-
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-
-}
-
-.card{
-
-width:420px;
-padding:35px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(18px);
-
-border-radius:25px;
-
-box-shadow:0 10px 40px rgba(0,0,0,.5);
-
-text-align:center;
-
-color:white;
-
-}
-
-.profile{
-
-width:120px;
-height:120px;
-
-margin:auto;
-
-border-radius:50%;
-
-background:#58a6ff;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:45px;
-
-font-weight:bold;
-
-margin-bottom:20px;
-
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    padding:35px;
+    background:rgba(22,27,34,.95);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
 }
 
 h1{
-
-font-size:32px;
-
-margin-bottom:8px;
-
+    text-align:center;
+    font-size:42px;
+    color:#58a6ff;
+    margin-bottom:10px;
 }
 
-p{
-
-color:#ddd;
-
-margin-bottom:25px;
-
+.subtitle{
+    text-align:center;
+    color:#8b949e;
+    margin-bottom:35px;
 }
 
-h3{
+h2{
+    color:#58a6ff;
+    margin:30px 0 15px;
+    border-left:5px solid #58a6ff;
+    padding-left:10px;
+}
 
-margin-top:20px;
+ul{
+    padding-left:20px;
+}
 
-margin-bottom:15px;
+li{
+    margin:10px 0;
+}
 
+/* Buttons */
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
 }
 
 .btn{
-
-display:block;
-
-margin:12px 0;
-
-padding:14px;
-
-text-decoration:none;
-
-font-weight:600;
-
-color:white;
-
-border-radius:50px;
-
-transition:.3s;
-
-}
-
-.linkedin{
-background:#0077b5;
-}
-
-.github{
-background:#24292e;
-}
-
-.codechef{
-background:#5B4638;
-}
-
-.leetcode{
-background:#FFA116;
-color:black;
+    flex:1;
+    min-width:180px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
 }
 
 .btn:hover{
-
-transform:translateY(-5px);
-
-box-shadow:0 8px 20px rgba(0,0,0,.4);
-
+    transform:translateY(-5px);
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
 }
 
+.linkedin{
+    background:#0077B5;
+}
+
+.github{
+    background:#24292f;
+}
+
+.codechef{
+    background:#5B4638;
+}
+
+.leetcode{
+    background:#FFA116;
+    color:black;
+}
+
+/* Skills */
+
 .skills{
-
-margin-top:20px;
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:10px;
-
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
 }
 
 .skills span{
-
-background:#58a6ff;
-
-padding:8px 15px;
-
-border-radius:30px;
-
-font-size:14px;
-
+    background:#21262d;
+    color:#58a6ff;
+    border:1px solid #58a6ff;
+    padding:8px 15px;
+    border-radius:30px;
+    transition:.3s;
 }
+
+.skills span:hover{
+    background:#58a6ff;
+    color:white;
+}
+
+/* GitHub Card */
+
+.stats{
+    background:#21262d;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    color:#8b949e;
+}
+
+/* Goals */
+
+.goals li::marker{
+    color:#58a6ff;
+}
+
+/* Footer */
 
 footer{
-
-margin-top:25px;
-
-font-size:14px;
-
-color:#bbb;
-
+    margin-top:35px;
+    text-align:center;
+    color:#8b949e;
+    border-top:1px solid #30363d;
+    padding-top:20px;
 }
 
+/* Responsive */
+
+@media(max-width:600px){
+
+.buttons{
+flex-direction:column;
+}
+
+h1{
+font-size:32px;
+}
+
+}
 </style>
 
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<div class="profile">
-HY
-</div>
+<h1>👋 Hi, I'm Hariom Yadav</h1>
 
-<h1>Hariom Yadav</h1>
-
-<p>
-B.Tech CSE Student 💻 <br>
-Web Developer | Python | C++ | DSA
+<p class="subtitle">
+B.Tech CSE Student • Web Developer • Python • C++ • DSA Enthusiast
 </p>
 
-<h3>🌐 Connect With Me</h3>
+<h2>👨‍💻 About Me</h2>
 
-<a class="btn linkedin" href="https://www.linkedin.com/in/hariiiom23" target="_blank">
+<ul>
+<li>🎓 Pursuing B.Tech in Computer Science Engineering</li>
+<li>💻 Passionate about Programming, Web Development and Problem Solving</li>
+<li>🌱 Currently learning Data Structures & Algorithms and Full Stack Development</li>
+<li>🚀 Always excited to explore new technologies</li>
+</ul>
+
+<h2>🌐 Connect With Me</h2>
+
+<div class="buttons">
+
+<a class="btn linkedin"
+href="https://www.linkedin.com/in/hariiiom23"
+target="_blank">
 🔗 LinkedIn
 </a>
 
-<a class="btn github" href="https://github.com/hariom2369" target="_blank">
+<a class="btn github"
+href="https://github.com/hariom2369"
+target="_blank">
 💻 GitHub
 </a>
 
-<a class="btn codechef" href="https://www.codechef.com/users/hariomcr7" target="_blank">
+<a class="btn codechef"
+href="https://www.codechef.com/users/hariomcr7"
+target="_blank">
 🍽 CodeChef
 </a>
 
-<a class="btn leetcode" href="https://leetcode.com/u/hariomcr7/" target="_blank">
+<a class="btn leetcode"
+href="https://leetcode.com/u/hariomcr7/"
+target="_blank">
 ⚡ LeetCode
 </a>
 
-<h3>🚀 Skills</h3>
+</div>
+
+<h2>🛠 Skills</h2>
 
 <div class="skills">
 
 <span>C</span>
 <span>C++</span>
 <span>Python</span>
+<span>SQL</span>
 <span>HTML</span>
 <span>CSS</span>
 <span>JavaScript</span>
-<span>SQL</span>
 <span>Git</span>
+<span>GitHub</span>
+<span>VS Code</span>
+<span>Jupyter Notebook</span>
 
 </div>
 
+<h2>📊 GitHub Stats</h2>
+
+<div class="stats">
+<p>Add your GitHub Stats Cards here later.</p>
+<p>Example:</p>
+<p>
+GitHub Readme Stats • Streak Stats • Top Languages
+</p>
+</div>
+
+<h2>🎯 Goals</h2>
+
+<ul class="goals">
+<li>Solve more DSA Problems</li>
+<li>Build Real-World Projects</li>
+<li>Contribute to Open Source</li>
+<li>Learn New Technologies Every Day</li>
+</ul>
+
 <footer>
 
-⭐ Thanks for visiting my profile!
+⭐ Thanks for visiting my profile! <br><br>
+
+Made with ❤️ by <strong>Hariom Yadav</strong>
 
 </footer>
 
